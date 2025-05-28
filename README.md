@@ -13,7 +13,7 @@
 
 ## 🚀 Live Demo
 
-🔗 [Live Deployment on Vercel](https://your-vercel-url.vercel.app)  
+🔗 [Live Deployment on Vercel](https://what-bytes-assignment-t9zk.vercel.app/)  
 🔗 [GitHub Repository](https://github.com/vedantnaik1008/WhatBytes_Assignment)
 
 ---
