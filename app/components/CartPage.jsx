@@ -32,7 +32,7 @@ const CartPage = () => {
                 </div>
             ) : (
                 <>
-                    <div className='pt-[80px] flex items-center justify-center w-full relative'>
+                    <div className='pt-[40px] flex items-center justify-center w-full relative'>
                         <h2 className='text-black text-5xl font-extrabold'>
                             Your Cart
                         </h2>
