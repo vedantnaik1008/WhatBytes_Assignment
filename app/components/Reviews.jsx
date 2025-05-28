@@ -84,7 +84,7 @@ const Reviews = ({ id }) => {
                         .filter((item) => id === item.productId)
                         .map((res) => (
                             <>
-                                <div className='bg-gray-200 rounded-md my-5 p-5 w-[95%] mx-auto relative'>
+                                <div className='bg-gray-200 rounded-md my-5 p-5 w-[95%] mx-auto relative' key={res.id}>
                                     <button
                                         onClick={() =>
                                             dispatch(removeReview(res.id))
