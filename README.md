@@ -3,7 +3,7 @@
 > ✅ **All functionalities are complete and working as per the assignment.**
 > 
 > ⚠️ **Note on Commit History & UI**  
-> I started implementing the project before fully reading the final assignment instructions. As a result, I pushed ~80% of the code in one go instead of following a feature-based commit structure. I sincerely apologize for this and assure you it won’t happen again in future assignments.  
+> I started implementing the project before fully reading the final submit assignment instructions. As a result, I pushed ~80% of the code in one go instead of following a feature-based commit structure. I sincerely apologize for this and assure you it won’t happen again in future.  
 > 
 > Additionally, to save time due to multiple overlapping deadlines, I used the UI from a prior project I built and modified it to match all required functionalities. While the UI design doesn't exactly match the given image, every required feature is fully implemented with proper logic, state management, performance optimizations, and best practices.  
 > 
