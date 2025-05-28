@@ -55,18 +55,17 @@ const Reviews = ({ id }) => {
                             placeholder='write review'
                             type='text'
                             value={input || ''}
-                            onChange={(
-                                e
-                            ) => setInput(e.target.value)}
+                            onChange={(e) => setInput(e.target.value)}
                         />
                         <div className='flex items-center gap-4'>
                             <input
                                 className='rounded-md px-2 border border-black'
                                 type='number'
                                 value={ratingInput || ''}
-                                onChange={(
-                                    e
-                                ) => setRatingInput(e.target.valueAsNumber)}
+                                placeholder='0'
+                                onChange={(e) =>
+                                    setRatingInput(e.target.valueAsNumber)
+                                }
                                 min={0}
                                 max={5}
                             />
@@ -84,7 +83,9 @@ const Reviews = ({ id }) => {
                         .filter((item) => id === item.productId)
                         .map((res) => (
                             <>
-                                <div className='bg-gray-200 rounded-md my-5 p-5 w-[95%] mx-auto relative' key={res.id}>
+                                <div
+                                    className='bg-gray-200 rounded-md my-5 p-5 w-[95%] mx-auto relative'
+                                    key={'unique' + res.id}>
                                     <button
                                         onClick={() =>
                                             dispatch(removeReview(res.id))
