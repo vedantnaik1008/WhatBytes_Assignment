@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import addItems from '../redux/reducers/addItems';
+import formClick from '../redux/reducers/formClick';
 import {
     persistStore,
     persistReducer,
@@ -43,8 +44,9 @@ const persistConfig = {
 };
 
 const persistedReducer = persistReducer(persistConfig, addItems);
+const persistedReducerForm = persistReducer(persistConfig, formClick);
 export const store = configureStore({
-    reducer: { addToCart: persistedReducer },
+    reducer: { addToCart: persistedReducer, form: persistedReducerForm },
 
     middleware: (getDefaultMiddleware) =>
         getDefaultMiddleware({

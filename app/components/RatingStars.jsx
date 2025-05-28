@@ -3,9 +3,11 @@ const RatingStars = ({ rating }) => {
     const roundedRating = Math.round(rating * 2) / 2;
 
     for (let i = 1; i <= 5; i++) {
+        const key = `star-${i}`;
         if (i <= roundedRating) {
             stars.push(
                 <svg
+                    key={key}
                     stroke='currentColor'
                     fill='currentColor'
                     strokeWidth='0'
@@ -20,6 +22,7 @@ const RatingStars = ({ rating }) => {
         } else if (i - 0.5 === roundedRating) {
             stars.push(
                 <svg
+                    key={key}
                     stroke='currentColor'
                     fill='currentColor'
                     strokeWidth='0'
@@ -34,6 +37,7 @@ const RatingStars = ({ rating }) => {
         } else {
             stars.push(
                 <svg
+                    key={key}
                     stroke='currentColor'
                     fill='currentColor'
                     strokeWidth='0'
